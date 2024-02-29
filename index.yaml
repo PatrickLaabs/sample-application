@@ -6,7 +6,7 @@ entries:
     created: "2024-02-29T20:04:04.071229+01:00"
     description: A Helm chart for Kubernetes
     digest: 5b14c71abfc53f6a682621c8de5d165e7352eff509c86ce583bbdc604ddab228
-    name: sample-application-chart
+    name: sample-application
     type: application
     urls:
     - https://patricklaabs.github.io/sample-application/sample-application-chart-0.1.0.tgz
