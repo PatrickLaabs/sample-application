@@ -28,11 +28,6 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
-      - name: Setup cosign
-        uses: sigstore/cosign-installer@v3.3.0
-        with:
-          cosign-release: v2.2.0
-
       - name: Set up Helm
         uses: azure/setup-helm@v3.5
         with:
@@ -63,8 +58,4 @@ jobs:
             helm push "${pkg}" oci://ghcr.io/"${GITHUB_REPOSITORY_OWNER}" |& tee .digest
             file="${pkg##*/}"       # extracts file name from full directory path
             name="${file%-*}"       # extracts chart name from filename
-            digest="$(awk -F "[, ]+" '/Digest/{print $NF}' < .digest)"
-            cosign sign ghcr.io/"${GITHUB_REPOSITORY_OWNER}"/"${name}"@"${digest}"
           done
-        env:
-          COSIGN_YES: true
