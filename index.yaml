@@ -3,6 +3,16 @@ entries:
   sample-application:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-29T19:28:42.831137743Z"
+    description: A Helm chart for Kubernetes
+    digest: 9840be335d887e7b08cab983307d85c181f170a995dd37352cdfe9f177ceac03
+    name: sample-application
+    type: application
+    urls:
+    - https://github.com/PatrickLaabs/sample-application/releases/download/sample-application-1.0.2/sample-application-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-29T19:22:05.009667635Z"
     description: A Helm chart for Kubernetes
     digest: 0f5fdb287e10a764784d76bcd0cd0a80e66aacbeb12667c9881cda3d3fe7dc7a
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://patricklaabs.github.io/sample-application/sample-application-0.1.2.tgz
     version: 0.1.2
-generated: "2024-02-29T19:22:05.009720193Z"
+generated: "2024-02-29T19:28:42.831156098Z"
