@@ -11,5 +11,5 @@ FROM gcr.io/distroless/static
 
 COPY --from=builder /sample-application/sample-application .
 
-EXPOSE 8080
+EXPOSE 8090
 ENTRYPOINT ["./sample-application"]
