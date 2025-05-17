@@ -1,9 +1,8 @@
 name: Create and publish a Docker image
 
 on:
-  push:
-    tags:
-      - "*"
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 env:
   REGISTRY: ghcr.io
