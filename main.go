@@ -57,7 +57,7 @@ func version(w http.ResponseWriter, r *http.Request) {
 func greet(w http.ResponseWriter, r *http.Request) {
 	name := strings.Trim(r.URL.Path, "/")
 	if name == "" {
-		name = "Gopher from preview env!"
+		name = "Gopher from preview env...!"
 	}
 
 	fmt.Fprintf(w, "<!DOCTYPE html>\n")
